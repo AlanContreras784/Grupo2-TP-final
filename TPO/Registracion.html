@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <img src="IMG/logo.png" alt="Logo">
+            <h1>ASESORAMIENTO EMPRESARIAL INTEGRAL</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Clientes.html">Clientes</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <form>
+          <label for="nom">Nombre: *</label>
+          <input type="text" name="nom" id="nom" maxlength="30" required><br>
+          <label for="ape">Apellido:*</label>
+          <input type="text" name="ape" id="ape" maxlength="30" required><br>
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad" min="0" max="120">
+          <br><br>
+          <label for="nac">Nacionalidad:</label>
+          <input type="text" name="nac" id="nac" maxlength="30">
+          <br><br>
+          <label for="fechnac">Fecha de nacimiento:</label>
+          <input type="date" name="fechnac">
+          <label for="residencia">Lugar de Residencia</label>
+          <select name="residencia" id="residencia">
+            <option value="1">Ciudad de Buenos Aires</option>
+            <option value="2">Gran Buenos Aires</option>
+            <option value="3">Interior del País</option>
+          </select>
+          <p>* Campos Obligatorios</p>
+          <fieldset>
+            <legend>Datos de contacto e Interes sobre sector:</legend>
+            <label for="correo">E-mail:</label>
+            <input type="email" name="correo" id="correo" placeholder="emmaie@gmail.com Example" required><br>
+            <label for="tel">Celular: *</label>
+            <input type="number" name="tel" id="tel" required>
+            <br>
+            <label for="sector">Necesito consultar sobre el sector:</label>
+            <input type="checkbox" name="sector" value="1"> Contable
+            <input type="checkbox" name="sector" value="1"> Impositivo
+            <input type="checkbox" name="sector" value="1"> Juridico
+            <input type="checkbox" name="sector" value="1"> Seguridad e Higiene
+            <input type="checkbox" name="sector" value="1"> Seguridad Informatica
+            <br>
+            <label for="rb">Que considera importante al momento de su consulta?</label>
+            <input type="radio" name="rb" value="1"> Pronta Respuesta
+            <input type="radio" name="rb" value="2"> Idoneidad del Profesional
+            <input type="radio" name="rb" value="3"> Concertar una entrevista personal
+            <input type="radio" name="rb" value="4"> Concertar una entrevista por meet
+            <br>
+            <p>*Campos Obligatorios</p>
+          </fieldset>
+          <input type="checkbox" name="condiciones" id="condiciones"> Acepto recibir novedades por correo electronico o
+          Celular
+          <br><br>
+          <input type="submit" value="Enviar Datos">
+          <input type="reset" value="Borrar Datos">
+        </form>
+      </section>
+
+    <footer class="centered-footer">
+        <h3><b>Para contactarse con nuestros servicios:</b></h3>
+        <ul id="contactenos">
+          <li><b>por WhatsApp al 15 5999-9999</b></li>
+          <li><b>grupo-A-E-I@gmail.com</b></li>
+        </ul>
+      </footer>
+
+
+
+</body>
+</html>
