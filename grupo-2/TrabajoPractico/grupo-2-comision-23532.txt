@@ -1,0 +1,172 @@
+El presente Trabajo Pr�ctico, se trata de un ejercicio real. Formalizando a trav�s de una p�gina web los servicios de asesoramiento que prestan un grupo de profesionales, en las �reas de Contabilidad-Impositivo, Servicios Jur�dicos y Previsionales, y por �ltimo, Seguridad e Higiene en el Trabajo y Seguridad Inform�tica y Mantenimiento de redes.
+A efectos del TP, se redujeron las cantidades de hojas .HTML , utilizando una para 2 tipos de asesoramiento, quedando una p�gina principal o Index.html, otra de servicios de asesoramiento de Contabilidad-Impositivo.html, Juridico-Previsional.html, Seg-Higiene.html y un formulario de contacto.
+Adicionalmente se le agreg� un Bot, para enviar mensajes de WhatsApp a un n�mero cargado.
+
+2. PUBLICO Y OBJETIVOS:
+
+La p�gina est� orientada hacia contribuyentes unipersonales como empresas a los cuales se les ofrece los servicios detallados en la misma para lograr que sus actividades, recursos (tanto humanos como econ�micos),  se potencien y logren brindar un servicio de excelencia para sus clientes.
+
+3. ESTRUCTURA DEL SITIO:
+
+La estructura b�sica del sitio es la siguiente:
+
+Etiqueta <!DOCTYPE html>:
+Indica la versi�n de HTML que se est� utilizando (en este caso, HTML5).
+<html lang="en">:
+Define el comienzo del documento HTML y especifica que el idioma utilizado es ingl�s ("en").
+Encabezado (<head>):
+Contiene metadatos y enlaces a recursos externos. Algunos elementos importantes son:
+meta charset="UTF-8": Define la codificaci�n de caracteres como UTF-8.
+meta name="viewport": Define c�mo se debe ajustar la escala en dispositivos m�viles.
+meta http-equiv="X-UA-Compatible": Indica la compatibilidad con Internet Explorer.
+link rel="icon": Especifica el �cono que se mostrar� en la pesta�a del navegador.
+meta name="author": Indica los autores del sitio.
+link rel="stylesheet": Enlaza la hoja de estilos externa (estilos.css).
+script defer src="JS/app.js": Enlaza el archivo de script JavaScript externo (app.js).
+title: Establece el t�tulo de la p�gina.
+Cuerpo (<body>):
+Contiene el contenido visible de la p�gina. Algunas secciones notables son:
+<div class="contenedor">: Envuelve todo el contenido de la p�gina.
+<header id="idheader" class="header">: Secci�n para el encabezado.
+<div class="slider-frame">: Contiene un carrusel de im�genes.
+<div class="contenido2">: Secci�n que contiene tres bloques con im�genes y descripciones.
+<div class="widget-1">: Contiene un bot�n que activa la funci�n traerUsuario() y muestra el contenido en el elemento con el id "contenido".
+<footer id="idfooter" class="pie-pagina">: Secci�n para el pie de p�gina.
+Scripts JavaScript:
+Al final del cuerpo, se enlazan varios archivos JavaScript (JS/clientesApi.js, JS/headerFooter.js, JS/script.js, JS/script2.js).
+Secci�n flotante de WhatsApp:
+Agrega un bot�n de WhatsApp flotante y una ventana emergente para interactuar con los visitantes.
+
+
+La estructura de navegaci�n se realiza por diferentes enlaces que nos llevan a otras secciones de la p�gina: Nosotros, Asesoramiento Contable, Asesoramiento Jur�dico, Seguridad e higiene y Contacto que ofrece la posibilidad de validaciones varias de los casilleros.
+
+4. DISE�O Y ESTILO
+Para la realizaci�n del proyecto, se utilizaron en CSS diferentes estilos:
+Reset de Estilos (* { margin: 0; padding: 0; }):
+Establece m�rgenes y rellenos a cero para todos los elementos, proporcionando un reseteo b�sico de estilos.
+Estilos Generales (body { color: #5c5c5c; font-family: ...; font-size: 14px; }):
+Define estilos generales para el cuerpo de la p�gina, como el color de texto, la fuente y el tama�o de fuente.
+Estilos del Contenedor Principal (.contenedor { ... }):
+Establece la estructura del contenedor principal utilizando la cuadr�cula (grid) con �reas para el encabezado, el carrusel, el contenido, el widget y el pie de p�gina.
+Estilos de la Barra de Navegaci�n (.header { ... }, .menu li a:hover { ... }, .submenu { ... }):
+Define estilos para la barra de navegaci�n, incluyendo el color de fondo, la alineaci�n y la apariencia de los elementos del men� y submen�.
+Estilos de Secciones Espec�ficas (#contenido2, #contenido3):
+Establece estilos espec�ficos para las secciones de contenido2 y contenido3, como colores de fondo y disposici�n de elementos.
+Estilos del Widget con API (.widget-1 { ... }):
+Define estilos para el widget que muestra informaci�n de la API, incluyendo colores de fondo, alineaci�n y formato del texto.
+Estilos del Pie de P�gina (.pie-pagina { ... }):
+Establece el estilo del pie de p�gina, incluyendo colores de fondo y estilos para los elementos dentro del pie de p�gina.
+Estilos del Carrusel (.slider-frame { ... }, @keyframes slide { ... }):
+Define estilos para el carrusel de im�genes, incluyendo el dise�o, la animaci�n y los tama�os de imagen.
+Estilos Responsivos (@media screen and (max-width: 768px) { ... }):
+Ajusta el dise�o para pantallas m�s peque�as, cambiando el tama�o y la disposici�n de algunos elementos para mejorar la experiencia en dispositivos m�viles.
+Estilos para el Formulario (.contenedorFormulario { ... }, .formulario { ... }):
+Establece estilos para el formulario, incluyendo dise�o, m�rgenes y colores de fondo.
+Estilos Espec�ficos para Im�genes (.contenedor img { ... }):
+Define estilos para las im�genes dentro del contenedor, especificando que ocupen el 100% del ancho y alto, y que se ajusten seg�n sea necesario.
+Estos son solo algunos de los estilos clave utilizados en la p�gina web. Cada bloque de estilos se aplica a elementos espec�ficos en la p�gina para lograr un dise�o y apariencia particulares.
+Principio del formulario
+
+Tambien se aplico Java Script para validar el formulario de contacto y se detalla una descripci�n de sus funciones principales:
+Expresiones Regulares (expresiones):
+Se definen expresiones regulares para validar el formato de correo electr�nico (correo) y el formato de n�mero de tel�fono (telefono).
+Evento de Env�o del Formulario (fvalida.addEventListener('submit', e => { ... }):
+Cancela el env�o est�ndar del formulario cuando se intenta enviar, utilizando e.preventDefault(). Esto permite realizar validaciones personalizadas antes de enviar los datos.
+Funci�n de Validaci�n Principal (validarEnviar()):
+Realiza diversas validaciones en los campos del formulario antes de permitir su env�o.
+Validaci�n de Nombre y Apellido:
+Asegura que se haya ingresado un nombre y un apellido.
+Validaci�n de Correo Electr�nico:
+Asegura que se haya ingresado un correo electr�nico y valida su formato utilizando la expresi�n regular definida.
+Validaci�n de Tel�fono:
+Asegura que se haya ingresado un n�mero de tel�fono y valida su formato utilizando la expresi�n regular definida.
+Validaci�n de Edad:
+Asegura que se haya ingresado un n�mero entero mayor de 18 a�os.
+Validaci�n de Residencia:
+Asegura que se haya seleccionado una opci�n de residencia en un men� desplegable.
+Validaci�n de Opciones de Consulta:
+Asegura que al menos una opci�n de consulta est� seleccionada.
+Validaci�n de Opci�n �nica:
+Asegura que solo se haya seleccionado una opci�n de un conjunto de opciones.
+Validaci�n de Aceptaci�n de T�rminos:
+Asegura que se haya marcado la casilla de aceptaci�n de t�rminos y condiciones.
+Env�o del Formulario:
+Si todas las validaciones son exitosas, se muestra un mensaje de agradecimiento y se env�a el formulario.
+Funciones Auxiliares (validarEntero(), esMail(), esTelefono()):
+validarEntero(valor): Convierte el valor a entero si es posible y devuelve la cadena vac�a si no es un n�mero.
+esMail(dato): Utiliza la expresi�n regular para verificar si el dato proporcionado es un correo electr�nico v�lido.
+esTelefono(dato): Utiliza la expresi�n regular para verificar si el dato proporcionado es un n�mero de tel�fono v�lido.
+En resumen, este c�digo JavaScript se encarga de validar diferentes campos de un formulario antes de permitir su env�o, asegurando que los datos ingresados cumplan con ciertos criterios especificados mediante expresiones regulares y l�gica de validaci�n.
+Principio del formulario
+
+Tambien utilizamos Java Script para la creaci�n de un bot�n de WatsApp:
+Tiene la funci�n de crear un bot�n de WhatsApp en la p�gina web y gestionar la apertura de un popup de WhatsApp al hacer clic en dicho bot�n. Aqu� hay una descripci�n concisa de su utilidad:
+Bot�n de WhatsApp:
+Genera un bot�n de WhatsApp que se puede abrir al hacer clic en �l.
+Popup de WhatsApp:
+Muestra un popup (ventana emergente) de WhatsApp al hacer clic en el bot�n correspondiente.
+Permite cerrar el popup al hacer clic en un bot�n de cierre dentro de �l.
+Animaci�n del Popup:
+Aplica una animaci�n de fade-in al abrir el popup para mejorar la experiencia del usuario.
+Env�o de Mensaje a WhatsApp:
+Permite al usuario escribir un mensaje en el popup de WhatsApp.
+Al hacer clic en el bot�n de enviar en el popup, el script construye un enlace de WhatsApp con el mensaje proporcionado.
+Abre una nueva ventana del navegador con el enlace de WhatsApp, lo que permite al usuario iniciar una conversaci�n de WhatsApp con el n�mero y el mensaje predefinidos.
+Temporizador de Aparici�n Autom�tica:
+Configura un temporizador para que el popup de WhatsApp aparezca autom�ticamente despu�s de 3 segundos de carga de la p�gina.
+En resumen, este script proporciona una forma interactiva y atractiva para que los usuarios se comuniquen con el propietario del sitio web a trav�s de WhatsApp. El popup facilita el inicio de una conversaci�n en WhatsApp con un mensaje predefinido y se presenta de manera autom�tica despu�s de un breve per�odo de tiempo.
+
+Tambien se utiliz� otro fragmento en Java Script:
+
+Este fragmento de JavaScript utiliza el objeto fetch para realizar una solicitud a la API de "randomuser.me". La funci�n traerUsuario() se llama para obtener informaci�n de usuario aleatoria y actualizar el contenido de un elemento HTML con esa informaci�n. Aqu� hay una explicaci�n m�s detallada:
+let contenido = document.querySelector('#contenido'):
+Selecciona un elemento HTML con el ID contenido y lo almacena en la variable contenido.
+function traerUsuario() { ... }:
+Define una funci�n llamada traerUsuario que realizar� la solicitud a la API y actualizar� el contenido HTML.
+fetch('https://randomuser.me/api'):
+Utiliza la funci�n fetch para realizar una solicitud a la URL proporcionada, que es la API de "randomuser.me". Esta API proporciona datos de usuarios aleatorios.
+.then(res => res.json()):
+Encadena una funci�n .then() que convierte la respuesta de la solicitud a JSON. La respuesta es procesada como un objeto JSON.
+.then(res => { ... }):
+Encadena otra funci�n .then() que maneja los datos obtenidos de la respuesta JSON.
+Imprime la respuesta en la consola para prop�sitos de depuraci�n.
+Actualiza el contenido del elemento HTML seleccionado (#contenido) con informaci�n espec�fica del usuario obtenida de la respuesta.
+.catch(error => console.log("Ocurri� un error", error)):
+Encadena una funci�n .catch() que maneja cualquier error que pueda ocurrir durante la solicitud y lo imprime en la consola.
+En resumen, este c�digo utiliza fetch para obtener datos de usuario aleatorios de una API, procesa la respuesta JSON y actualiza din�micamente el contenido de un elemento HTML en la p�gina con informaci�n espec�fica del usuario. Esto es com�nmente utilizado para mostrar contenido din�mico o actualizaciones en una p�gina web sin tener que recargarla completamente.
+5.-CONTENIDO Y FUNCIONALIDADES:
+El contenido de la pagina esta conformado por una serie de im�genes que apoyan la tem�tica misma de la actividad de la empresa, tambi�n cuenta con una secci�n de SITIOS DE INTERES que se conforman por una lista de navegaci�n redireccionada a los mismos �
+Al igual que los sitios de inter�s, tambi�n en el footer se encuentra una breve descripci�n de la actividad de la empresa y el enlace a diferentes redes sociales.
+Tambien cuenta con un formulario de contacto y registraci�n para los clientes o futuros clientes que deseen contactarse con nosotros.
+6. RESPONSABILIDADES DEL EQUIPO:
+El equipo en su etapa inicial se encontr� con desersiones de integrantes, quedando lugares libres, los que luego fueron completados por otros compa�eros.
+El equipo se encuentra conformado por las siguientes personas:
+Elvira M. Maggiolo, Maria Eugenia Jacord, Alan Contreras y Marcelo Alejandro Galarza.
+En general se trat� de un trabajo totalmente en grupo, con mucha comunicaci�n entre los mismos y aunque algunos por distintintos motivos se sumaron mas tarde al proyecto, aportaron much�simo a la tarea inicial de ELVIRA MAGGIOLO de la conformaci�n de la pagina inicial en html y CSS, MARIA EUGENIA JACORD Y ALEJANDRO GALARZA se ocuparon sobre todo de la maquetaci�n y de darle un tinte m�s profesional a la pagina, y Alan Contreras se ocupo del tema de Formularios y API aplicados al mismo. En suma, fue una tarea en equipo y con el uso de las habilidades blandas brindada por CODO A CODO que sirvi� much�simo para la buena convivencia, respeto y apoyo de todo el exelente grupo que hemos logrado conformar.
+EQUIPO2 � COMISION 23532 � 2� CUATRIMESTRE 2023
+
+Informamos mails de los integrantes del grupo por cualquier consulta en particular:
+
+GALARZA, Marcelo Alejandro
+galarza.marcelo.alejandro@gmail.com
+CONTRERAS FLORES, Alan Benito
+alancontreras784@gmail.com
+JACCOD, Mar�a Eugenia
+eugenia.jaccod@gmail.com
+MAGGIOLO, Elvira Maria
+asistente.contable.cg@gmail.com
+
+
+
+
+GRUPO II ASESORAMIENTO INTEGRAL EMPESARIAL
+
+
+
+
+
+
+
+
+
+
