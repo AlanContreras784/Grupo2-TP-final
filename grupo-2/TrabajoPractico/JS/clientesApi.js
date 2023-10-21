@@ -9,7 +9,7 @@ function traerUsuario() {
       contenido.innerHTML = `
             <img src="${res.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
             <p>Nombre: ${res.results[0].name.first}</p>
-            <p>Mail: ${res.results[0].email}</p>
+            <p>País: ${res.results[0].location.country}</p>
             `
     })
     .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch
