@@ -1,4 +1,4 @@
-let header = ` <div class="divlogo">
+let header = `<div class="divlogo">
 <div class="logo">
     <img src="IMG/logo.png" alt="Logo">
 </div>
@@ -20,6 +20,7 @@ let header = ` <div class="divlogo">
     <li><a href="Contacto.html">Contacto</a></li>
 </ul>
 </nav>`
+
 document.getElementById("idheader").innerHTML = header
 
 

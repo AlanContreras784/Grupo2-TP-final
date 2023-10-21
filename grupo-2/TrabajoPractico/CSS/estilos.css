@@ -187,12 +187,12 @@ body {
 /*ESTILOS PARA LA API*/
 
 .contenedor .widget-1 {
-  background: #f1f0ef;
+  background: #00477b;
   color: white;
   font-style: bold;
   font-weight: bold;
   height: auto;
-  width: auto;
+  width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -257,7 +257,7 @@ body {
   text-decoration: none;
   border-radius: 3px;
   /* margin-inline: 130px; */
-  margin-left: 290px;
+  /*margin-left: 200px;*/
   padding: 7px;
   text-align: center;
   margin-top: 430px;
