@@ -1,6 +1,8 @@
 # grupo-2
 Grupo II Asesoramiento Empresarial Integral
 
+1. BREVE DESCRIPCION DEL PROYECTO:
+
 El presente Trabajo Practico, se trata de un ejercicio real. Formalizando a traves de una pagina web los servicios de asesoramiento que prestan un grupo de profesionales, en las Areas de Contabilidad-Impositivo, Servicios Juridicos y Previsionales, y por ultimo, Seguridad e Higiene en el Trabajo y Seguridad Informatica y Mantenimiento de redes.
 A efectos del TP, se redujeron las cantidades de hojas .HTML , utilizando una para 2 tipos de asesoramiento, quedando una pagina principal o Index.html, otra de servicios de asesoramiento de Contabilidad-Impositivo.html, Juridico-Previsional.html, Seg-Higiene.html y un formulario de contacto.
 Adicionalmente se le agrego un Bot, para enviar mensajes de WhatsApp a un numero cargado.
@@ -33,7 +35,7 @@ Contiene el contenido visible de la pagina. Algunas secciones notables son:
 <header id="idheader" class="header">: Seccion para el encabezado.
 <div class="slider-frame">: Contiene un carrusel de imagenes.
 <div class="contenido2">: Seccion que contiene tres bloques con imagenes y descripciones.
-<div class="widget-1">: Contiene un bot�n que activa la funcion traerUsuario() y muestra el contenido en el elemento con el id "contenido".
+<div class="widget-1">: Contiene un boton que activa la funcion traerUsuario() y muestra el contenido en el elemento con el id "contenido".
 <footer id="idfooter" class="pie-pagina">: Seccion para el pie de pagina.
 Scripts JavaScript:
 Al final del cuerpo, se enlazan varios archivos JavaScript (JS/clientesApi.js, JS/headerFooter.js, JS/script.js, JS/script2.js).
@@ -44,6 +46,7 @@ Agrega un boton de WhatsApp flotante y una ventana emergente para interactuar co
 La estructura de navegacion se realiza por diferentes enlaces que nos llevan a otras secciones de la pagina: Nosotros, Asesoramiento Contable, Asesoramiento Juridico, Seguridad e higiene y Contacto que ofrece la posibilidad de validaciones varias de los casilleros.
 
 4. DISENO Y ESTILO
+
 Para la realizacion del proyecto, se utilizaron en CSS diferentes estilos:
 Reset de Estilos (* { margin: 0; padding: 0; }):
 Establece margenes y rellenos a cero para todos los elementos, proporcionando un reseteo basico de estilos.
@@ -70,6 +73,7 @@ Estos son solo algunos de los estilos clave utilizados en la pagina web. Cada bl
 
 
 5. PRINCIPIO DEL FORMULARIO
+
 Tambien se aplico Java Script para validar el formulario de contacto y se detalla una descripcion de sus funciones principales:
 Expresiones Regulares (expresiones):
 Se definen expresiones regulares para validar el formato de correo electronico (correo) y el formato de numero de telofono (telefono).
@@ -141,11 +145,13 @@ En resumen, este codigo utiliza fetch para obtener datos de usuario aleatorios d
 
 
 6. CONTENIDO Y FUNCIONALIDADES:
+
 El contenido de la pagina esta conformado por una serie de imagenes que apoyan la tematica misma de la actividad de la empresa, tambien cuenta con una seccion de SITIOS DE INTERES que se conforman por una lista de navegacion redireccionada a los mismos.
 Al igual que los sitios de interes, tambien en el footer se encuentra una breve descripcion de la actividad de la empresa y el enlace a diferentes redes sociales.
 Tambien cuenta con un formulario de contacto y registracion para los clientes o futuros clientes que deseen contactarse con nosotros.
 
 7. RESPONSABILIDADES DEL EQUIPO:
+
 El equipo en su etapa inicial se encontro con desersiones de integrantes, quedando lugares libres, los que luego fueron completados por otros companeros.
 El equipo se encuentra conformado por las siguientes personas:
 Elvira M. Maggiolo, Maria Eugenia Jacord, Alan Contreras y Marcelo Alejandro Galarza.
