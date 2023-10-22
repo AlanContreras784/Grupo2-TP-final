@@ -516,7 +516,7 @@ body {
 }
 
 
-/* @MEDIA SCREEN*/
+/* @MEDIA SCREEN DEL FOOTER*/
 @media screen and (max-width:768px) {
 
   .pie-pagina .grupo-1 {
@@ -541,7 +541,6 @@ body {
 
 }
 
-
 /*RESPONSIVO PARA CELULARES*/
 
 @media screen and (max-width:400px) {
@@ -554,4 +553,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
