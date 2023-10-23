@@ -8,7 +8,7 @@ let header = `<div class="divlogo">
 </div>
 <nav class="navegacion">
 <ul class="menu">
-    <li><a href="index .html">Inicio</a></li>
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="Nosotros.html">Nosotros</a></li>
     <li><a href="#">Servicios</a>
         <ul class="submenu">
