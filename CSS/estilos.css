@@ -126,6 +126,7 @@ body {
 /*ESTILO PARA EL BODY*/
 .contenedor .contenido2 {
   grid-area: contenido2;
+  grid-template-columns: repeat(auto-fill,minmax(min(100%,25rem ),1fr));
   background-color: #f1f0ef;
   display: flex;
   width: 100%;
@@ -141,6 +142,7 @@ body {
   margin: 25px 0px 40px 0px;
   background-color: white;
   position: relative;
+  height: auto;
 }
 
 .contenedor .contenido3 {
@@ -229,7 +231,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
 
 }
 
@@ -537,6 +538,33 @@ body {
     width: auto;
     grid-template-columns: 1fr 1fr;
 
+  }
+  .contenedor .contenido3,
+  .contenedor .contenido2 {
+    grid-area: contenido2;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,25rem ),1fr));
+    background-color: #f1f0ef;
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    height: 50%;
+    margin: 20px 0px 30px 0px;
+    
+  }
+  .contenido3 .div img,
+  .contenido3>div,
+  .contenido3 .divnosotros,
+  .enlacecentral,
+  .contenido2 .div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,25rem ),1fr));
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    background-color: white;
+    position: relative;
+    height: 100%;
+    border: none;
   }
 
 }
