@@ -99,7 +99,7 @@ esTelefono(dato): Utiliza la expresi�n regular para verificar si el dato propo
 En resumen, este c�digo JavaScript se encarga de validar diferentes campos de un formulario antes de permitir su env�o, asegurando que los datos ingresados cumplan con ciertos criterios especificados mediante expresiones regulares y l�gica de validaci�n.
 Principio del formulario
 
-Tambien utilizamos Java Script para la creaci�n de un bot�n de WatsApp:
+Tambien utilizamos Java Script para la creaci�n de un bot�n de WhatsApp:
 Tiene la funci�n de crear un bot�n de WhatsApp en la p�gina web y gestionar la apertura de un popup de WhatsApp al hacer clic en dicho bot�n. Aqu� hay una descripci�n concisa de su utilidad:
 Bot�n de WhatsApp:
 Genera un bot�n de WhatsApp que se puede abrir al hacer clic en �l.
@@ -141,8 +141,8 @@ Tambien cuenta con un formulario de contacto y registraci�n para los clientes 
 6. RESPONSABILIDADES DEL EQUIPO:
 El equipo en su etapa inicial se encontr� con desersiones de integrantes, quedando lugares libres, los que luego fueron completados por otros compa�eros.
 El equipo se encuentra conformado por las siguientes personas:
-Elvira M. Maggiolo, Maria Eugenia Jacord, Alan Contreras y Marcelo Alejandro Galarza.
-En general se trat� de un trabajo totalmente en grupo, con mucha comunicaci�n entre los mismos y aunque algunos por distintintos motivos se sumaron mas tarde al proyecto, aportaron much�simo a la tarea inicial de ELVIRA MAGGIOLO de la conformaci�n de la pagina inicial en html y CSS, MARIA EUGENIA JACORD Y ALEJANDRO GALARZA se ocuparon sobre todo de la maquetaci�n y de darle un tinte m�s profesional a la pagina, y Alan Contreras se ocupo del tema de Formularios y API aplicados al mismo. En suma, fue una tarea en equipo y con el uso de las habilidades blandas brindada por CODO A CODO que sirvi� much�simo para la buena convivencia, respeto y apoyo de todo el exelente grupo que hemos logrado conformar.
+Elvira M. Maggiolo, Maria Eugenia Jaccod, Alan Contreras y Marcelo Alejandro Galarza.
+En general se trat� de un trabajo totalmente en grupo, con mucha comunicaci�n entre los mismos y aunque algunos por distintintos motivos se sumaron mas tarde al proyecto, aportaron much�simo a la tarea inicial de ELVIRA MAGGIOLO de la conformaci�n de la pagina inicial en html y CSS, MARIA EUGENIA JACCOD Y ALEJANDRO GALARZA se ocuparon sobre todo de la maquetaci�n y de darle un tinte m�s profesional a la página, y Alan Contreras se ocupo del tema de Formularios y API aplicados al mismo, y de hacer las páginas responsivas, de los iframes y solucionar errores de código en general de todo el trabajo. En suma, fue una tarea en equipo y con el uso de las habilidades blandas brindada por CODO A CODO que sirvi� much�simo para la buena convivencia, respeto y apoyo de todo el excelente grupo que hemos logrado conformar.
 EQUIPO2 � COMISION 23532 � 2� CUATRIMESTRE 2023
 
 Informamos mails de los integrantes del grupo por cualquier consulta en particular:
