@@ -131,7 +131,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  height: auto;
+  height: 550px;
   margin: 80px 0px 90px 0px;
 }
 
@@ -151,8 +151,8 @@ body {
   display: flex;
   justify-content: initial;
   width: 100%;
-  height: auto;
-  margin: 20px 0px 80px 0px;
+  height: 430px;
+  margin: 10px 0px 60px 0px;
   padding: 0px;
 }
 
@@ -174,16 +174,10 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
-  border-color: #353535;
-  margin-left: 40px;
-  margin-top: 30px;
-  margin-right: 50px;
-}
-
-.contenido3 .divnosotros .tituloscentral {
-  padding-top: 50px;
-}
-
+  justify-content: center;
+  padding-left:30px;
+  padding-right: 40px;
+  }
 
 
 /*ESTILOS PARA LA API*/
@@ -246,7 +240,7 @@ body {
 }
 
 .textocentral {
-  text-align: justify;
+  text-align: left;
   margin-inline: 20px;
   margin-top: 30px;
 }
@@ -257,8 +251,7 @@ body {
   color: #5c5c5c;
   text-decoration: none;
   border-radius: 3px;
-  /* margin-inline: 130px; */
-  /*margin-left: 200px;*/
+  justify-content: flex-end;
   padding: 7px;
   text-align: center;
   margin-top: 430px;
@@ -289,6 +282,7 @@ body {
   display: grid;
   grid-column: span 3;
   height: 320px;
+  margin-top: 10px;
 
 }
 
@@ -303,7 +297,7 @@ body {
   border-radius: 10px;
   grid-column: span 3;
   color: rgb(167, 163, 163);
-  padding: 5px;
+  padding: 15px;
 }
 
 .fieldsetFormDatosP {
@@ -328,10 +322,10 @@ body {
 
 .formulario__label {
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   padding: 3%;
   cursor: pointer;
-  color: rgb(164, 163, 163)
+  color: rgb(164, 163, 163);
 }
 
 .formulario__grupo-input {
@@ -376,19 +370,19 @@ body {
   height: 45px;
   line-height: 45px;
   width: 40vmax;
-  background: #0075ff;
+  background: #00477b;
   color: #fff;
   font-weight: bold;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: 1s ease all;
+  transition: 0.2s ease all;
 
 
 }
 
 .formulario__btn:hover {
-  box-shadow: 3px 0px 30px rgb(89, 88, 88);
+  box-shadow: 3px 0px 10px rgb(89, 88, 88);
 }
 
 .iframeFormulario {
@@ -473,10 +467,15 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  margin-left:80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 40px 0px;
+}
+
+.pie-pagina .grupo-1 li{
+  list-style: none;
 }
 
 .pie-pagina .grupo-1 .box h2 {
@@ -506,16 +505,22 @@ body {
 
 .pie-pagina .grupo-2 {
   background-color: lightgray;
-  padding: 15px 10px;
+  padding: 5px 5px;
   text-align: center;
   color: darkblue;
 }
 
 .pie-pagina .grupo-2 small {
   align-items: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
 /* @MEDIA SCREEN DEL FOOTER*/
 @media screen and (max-width:768px) {
@@ -580,4 +585,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+.box{
+  list-style: none;
 }

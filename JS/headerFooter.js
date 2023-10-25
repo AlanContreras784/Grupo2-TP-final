@@ -43,7 +43,7 @@ let footer = `<div class="grupo-1">
  </div>
 
  <div class="box">
-     <h2>Sitios de interes</h2>
+     <h2>Sitios de interés</h2>
      <a href="https://www.afip.gob.ar/" target="_blank" rel="noopener noreferrer">Ingreso a AFIP</a><br>
      <a href="https://www.argentina.gob.ar/srt" target="_blank" rel="noopener noreferrer">Ingreso a Mi
          Argentina</a><br>
@@ -63,7 +63,7 @@ let footer = `<div class="grupo-1">
 
  <div class="grupo-2">
      <div class="box">
-         <small> <b>Equipo N° 2 - Segundo Cuatrimestre 2023 <br> Comision-23532</b></small>
+         <small>Grupo 2 - SC 2023 - Comisión 23532</small>
      </div>
  </div>
 </div>`
