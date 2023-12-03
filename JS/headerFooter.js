@@ -18,6 +18,7 @@ let header = `<div class="divlogo">
         </ul>
     </li>
     <li><a href="Contacto.html">Contacto</a></li>
+    <li><a href="nuestraApi.html">Nuestra API</a></li>
 </ul>
 </nav>`
 
@@ -38,7 +39,7 @@ let footer = `<div class="grupo-1">
              fundamental
              de una empresa.</li>
          <li>Profesionales altamente capacitados.</li>
-         <li>Ejecutividad ante las consultas de un contriibuyente.</li>
+         <li>Ejecutividad ante las consultas de un contribuyente.</li>
      </ul>
  </div>
 
