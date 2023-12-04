@@ -189,7 +189,7 @@ def modificar_cliente(codigo):
     #imagen.save(os.path.join(ruta_destino, nombre_imagen))
 
     # Actualización del producto
-    if gestor_cliente.modificar_cliente(codigo, nuevo_nombre, nuevo_apellido, nuevo_dninueva_deuda, nuevo_impuesto):
+    if gestor_cliente.modificar_cliente(codigo, nuevo_nombre, nuevo_apellido, nuevo_dni, nueva_deuda, nuevo_impuesto):
         return jsonify({"mensaje": "Cliente modificado"}), 200
     else:
         return jsonify({"mensaje": "Cliente no encontrado"}), 404
