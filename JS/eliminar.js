@@ -27,7 +27,7 @@ const app = Vue.createApp({
         eliminarCliente(codigo) {
             if (confirm('¿Estás seguro de que quieres eliminar este cliente ? ')) {
 
-                fetch(URL + `clientes/${codigo}`, { method: 'DELETE' })
+                fetch(URL + `clientes/${codigo}`, { method:'DELETE' })
                     .then(response => {
                         if (response.ok) {
                             this.clientes = this.clientes.filter(cliente => cliente.codigo !== codigo);

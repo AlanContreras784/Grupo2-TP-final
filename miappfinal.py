@@ -62,7 +62,7 @@ class Gestor_Clientes:
 #--------------------------------------------------------------------
     def consultar_cliente(self, codigo):
         # Consultamos un producto a partir de su código
-        self.cursor.execute(f"SELECT * FROM clientes WHERE codigo ={codigo}")
+        self.cursor.execute(f"SELECT * FROM clientes WHERE codigo = {codigo}")
         return self.cursor.fetchone()
 #--------------------------------------------------------------------
 
