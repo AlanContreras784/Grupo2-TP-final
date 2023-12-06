@@ -19,34 +19,34 @@ document.getElementById('formulario').addEventListener('submit', function (event
     })
 
         //Después de realizar la solicitud POST, se utiliza el método then() para manejar la respuesta del servidor.
-    .then(function (response) {
-        if (response.ok) {
-             return response.json();
-        } else {
-            // Si hubo un error, lanzar explícitamente una excepción
-            // para ser "catcheada" más adelante
-            throw new Error('Error al agregar el cliente');
-        }
-    })
+        .then(function (response) {
+            if (response.ok) {
+                return response.json();
+            } else {
+                // Si hubo un error, lanzar explícitamente una excepción
+                // para ser "catcheada" más adelante
+                throw new Error('Error al agregar el cliente');
+            }
+        })
 
-    // Respuesta OK
-    .then(function () {
-        // En caso de éxito
-        alert('Cliente agregado correctamente.');
-    })
-    .catch(function (error) {
-        // En caso de error
-        alert('Error al agregar el cliente.');
-        console.error('Error:', error);
-    })
-    .finally(function () {
-        // Limpiar el formulario en ambos casos (éxito o error)
-        document.getElementById('codigo').value = "";
-        document.getElementById('nombre').value = "";
-        document.getElementById('apellido').value = "";
-        document.getElementById('dni').value = "";
-        document.getElementById('imagenCliente').value = "";
-        document.getElementById('deuda').value = "";
-         document.getElementById('tipo_impuesto').value = "";
-    });
+        // Respuesta OK
+        .then(function () {
+            // En caso de éxito
+            alert('Cliente agregado correctamente.');
+        })
+        .catch(function (error) {
+            // En caso de error
+            alert('Error al agregar el cliente.');
+            console.error('Error:', error);
+        })
+        .finally(function () {
+            // Limpiar el formulario en ambos casos (éxito o error)
+            document.getElementById('codigo').value = "";
+            document.getElementById('nombre').value = "";
+            document.getElementById('apellido').value = "";
+            document.getElementById('dni').value = "";
+            document.getElementById('imagenCliente').value = "";
+            document.getElementById('deuda').value = "";
+            document.getElementById('tipo_impuesto').value = "";
+        });
 })        
