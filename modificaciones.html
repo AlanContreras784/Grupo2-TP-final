@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Modificar Cliente</title>
-    <link rel="stylesheet" href="CSS/estilosBBDD.css">
+    <link rel="stylesheet" href="CSS/estlosBBDD.css">
 </head>
 
 <body>
@@ -36,7 +36,9 @@
                 <input type="number" id="dniModificar" v-model="dni" required><br>
 
                 <!-- Imagen actual del producto -->
-                <img v-if="imagen_url && !imagenSeleccionada" :src="'https://www.pythonanywhere.com/user/grupo2com23532/files/home/grupo2com23532/mysite/static/img/' + imagen_url" alt="Imagen del cliente" style="max-width: 200px;">
+                <img v-if="imagen_url && !imagenSeleccionada"
+                    :src="'https://www.pythonanywhere.com/user/grupo2com23532/files/home/grupo2com23532/mysite/static/img/' + imagen_url"
+                    alt="Imagen del cliente" style="max-width: 200px;">
                 <!--<img v-if="imagen_url && !imagenSeleccionada" :src="'static/img/' + imagen_url"
                     alt="Imagen del cliente" style="max-width: 200px;">-->
                 <!-- Vista previa de la nueva imagen seleccionada -->
