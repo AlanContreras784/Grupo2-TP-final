@@ -22,12 +22,10 @@ fetch(URL + 'clientes')
                 '<td>' + cliente.nombre + '</td>' +
                 '<td>' + cliente.apellido + '</td>' +
                 '<td align="right">' + cliente.dni + '</td>' +
-                '<td align="right">' + cliente.deuda + '</td>' +
                 // Mostrar miniatura de la imagen
-                //'<td><img src=static/img/' + producto.imagen_url + '
-
-                //alt = "Imagen del producto" style = "width: 100px;" ></td > ' +
-
+                //'<td><img src=static/img/' + cliente.imagen_url + ' alt="Imagen del cliente" style="width: 100px;"></td>' +
+                '<td><img src=https://www.pythonanywhere.com/user/grupo2com23532/files/home/grupo2com23532/mysite/static/img/' + cliente.imagen_url + ' alt = "Imagen del cliente" style = "width: 100px;" ></td > ' +
+                '<td align="right">' + cliente.deuda + '</td>' +
                 '<td align="right">' + cliente.tipo_impuesto + '</td>';
             //Una vez que se crea la fila con el contenido del producto, se agrega a la tabla utilizando el método appendChild del elemento tablaProductos.
 

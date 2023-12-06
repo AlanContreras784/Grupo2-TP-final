@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-
 scale=1.0">
     <title>Agregar Clientes</title>
-    <link rel="stylesheet" href="CSS/estlosBBDD.css">
+    <link rel="stylesheet" href="CSS/estilosBBDD.css">
 </head>
 
 <body>
@@ -18,14 +18,22 @@ al back.-->
     <form id="formulario" enctype="multipart/form-data">
         <label for="codigo">Código:</label>
         <input type="text" id="codigo" name="codigo" required><br>
+
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
+
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" required><br>
+
         <label for="dni">DNI:</label>
         <input type="number" id="dni" name="dni" required><br>
+
+        <label for="imagenCliente">Imagen del cliente:</label>
+        <input type="file" id="imagenCliente" name="imagen"><br>
+
         <label for="deuda">Deuda:</label>
-        <input type="number" id="deuda" name="deuda" required><br>
+        <input type="number" id="deuda" name="deuda" required><br><br>
+
         <label for="tipo_impuesto">Tipo de Impuesto:</label>
         <input type="text" id="tipo_impuesto" name="tipo_impuesto" required>
 

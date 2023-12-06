@@ -10,6 +10,8 @@ const app = Vue.createApp({
             dni: '',
             deuda: '',
             tipo_impuesto: '',
+            imagen_url: '',
+            imagenUrlTemp: null,
             mostrarDatosCliente: false,
         };
     },
@@ -32,6 +34,7 @@ const app = Vue.createApp({
                     this.dni = data.dni;
                     this.deuda = data.deuda;
                     this.tipo_impuesto = data.tipo_impuesto;
+                    this.imagen_url = data.imagen_url;
                     this.mostrarDatosCliente = true;
                 })
                 .catch(error => {
@@ -39,11 +42,11 @@ const app = Vue.createApp({
                     alert('Código no encontrado.');
                 })
         },
-        //seleccionarImagen(event) {
-        //const file = event.target.files[0];
-        //this.imagenSeleccionada = file;
-        //this.imagenUrlTemp = URL.createObjectURL(file); // Crea una URL temporal para la vista previa},
-
+        seleccionarImagen(event) {
+            const file = event.target.files[0];
+            this.imagenSeleccionada = file;
+            this.imagenUrlTemp = URL.createObjectURL(file); // Crea una URL temporal para la vista previa
+            },
         guardarCambios() {
             const formData = new FormData();
             formData.append('codigo', this.codigo);
@@ -53,8 +56,9 @@ const app = Vue.createApp({
             formData.append('deuda', this.deuda);
             formData.append('tipo_impuesto', this.tipo_impuesto);
 
-            //if (this.imagenSeleccionada) {
-            //formData.append('imagen', this.imagenSeleccionada, this.imagenSeleccionada.name);}
+            if (this.imagenSeleccionada) {
+                formData.append('imagen', this.imagenSeleccionada, this.imagenSeleccionada.name);
+            }
 
             //Utilizamos fetch para realizar una solicitud PUT a la API y guardar los cambios.
             fetch(URL + 'clientes/' + this.codigo, {
@@ -86,6 +90,9 @@ const app = Vue.createApp({
             this.dni = '';
             this.deuda = '';
             this.tipo_impuesto = '';
+            this.imagen_url = '';
+            this.imagenSeleccionada = null;
+            this.imagenUrlTemp = null;
             this.mostrarDatosCliente = false;
 
         }

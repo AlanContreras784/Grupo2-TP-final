@@ -9,6 +9,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
     formData.append('nombre', document.getElementById('nombre').value);
     formData.append('apellido', document.getElementById('apellido').value);
     formData.append('dni', document.getElementById('dni').value);
+    formData.append('imagen', document.getElementById('imagenCliente').files[0]);
     formData.append('deuda', document.getElementById('deuda').value);
     formData.append('tipo_impuesto', document.getElementById('tipo_impuesto').value);
     // Realizamos la solicitud POST al servidor
@@ -44,6 +45,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         document.getElementById('nombre').value = "";
         document.getElementById('apellido').value = "";
         document.getElementById('dni').value = "";
+        document.getElementById('imagenCliente').value = "";
         document.getElementById('deuda').value = "";
         document.getElementById('tipo_impuesto').value = "";
     });
