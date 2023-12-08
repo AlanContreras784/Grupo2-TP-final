@@ -46,7 +46,8 @@ const app = Vue.createApp({
     seleccionarImagen(event) {
         const file = event.target.files[0];
         this.imagenSeleccionada = file;
-        this.imagenUrlTemp = URL.createObjectURL(file); // Crea una URL temporal para la vista previa
+        this.imagenUrlTemp = URL.createObjectURL(file); 
+        // Crea una URL temporal para la vista previa
     },
     guardarCambios() {
         const formData = new FormData();
