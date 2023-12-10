@@ -1,14 +1,17 @@
 /* Estilos para todo el proyecto */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    color: #5c5c5c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
 }
+
 
 
 .contenedor-centrado {
     display: flex;
     width: 100%;
     justify-content: center;
+    border: 10px;
 }
 
 p {
@@ -27,7 +30,7 @@ h5,
 h6 {
 
     text-align: center;
-    color: #007bff;
+    color: #00477b;
 }
 
 form {
@@ -79,7 +82,7 @@ input[type="submit"]:hover {
 button {
 
     padding: 8px;
-    margin: 4px;
+    margin: 8px;
     background-color: #007bff;
     color: #ffffff;
     border: none;
@@ -88,22 +91,20 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #cd7b00;
 }
 
 a {
     padding: 8px;
     margin: 4px;
-    background-color: #fdab13;
+    background-color: #00477b;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 85%;
+    font-size: 120%;
 }
 
 a:hover {
     background-color: #cd7b00;
-}
-

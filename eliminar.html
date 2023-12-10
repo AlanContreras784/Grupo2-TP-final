@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-
 scale=1.0">
 
-    <title>Listado de Clientes</title>
+    <title>Baja de Clientes</title>
     <link rel="stylesheet" href="CSS/estlosBBDD.css">
 </head>
 
@@ -31,7 +31,7 @@ scale=1.0">
                 <td>{{ cliente.nombre }}</td>
                 <td>{{ cliente.apellido }}</td>
                 <td align="right">{{ cliente.dni }}</td>
-                <td><button @click="eliminarCliente(cliente.codigo)">Eliminar</button></td>
+                <td><button @click="eliminarCliente(cliente.codigo)">Dar Baja</button></td>
 
             </tr>
         </tbody>

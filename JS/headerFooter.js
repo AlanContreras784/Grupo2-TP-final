@@ -18,7 +18,7 @@ let header = `<div class="divlogo">
         </ul>
     </li>
     <li><a href="Contacto.html">Contacto</a></li>
-    <li><a href="nuestraApi.html">Nuestra API</a></li>
+    <li><a href="nuestraApi.html">Administrar Clientes</a></li>
 </ul>
 </nav>`
 
