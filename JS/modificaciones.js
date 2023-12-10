@@ -40,7 +40,7 @@ const app = Vue.createApp({
                 })
                 .catch(error => {
                     console.log(error);
-                    alert('Código no encontrado.');
+                    alert('Código de Cliente no encontrado.');
                 })
         },
         seleccionarImagen(event) {
