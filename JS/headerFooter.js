@@ -18,7 +18,7 @@ let header = `<div class="divlogo">
         </ul>
     </li>
     <li><a href="Contacto.html">Contacto</a></li>
-    <li><a href="nuestraApi.html">Administrar Clientes</a></li>
+    <li><a href="nuestraApi.html" onclick="pedirPasswoord()">Administrar Clientes</a></li>
 </ul>
 </nav>`
 

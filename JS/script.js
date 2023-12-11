@@ -126,3 +126,19 @@ function esTelefono(dato) {
     return expresiones.telefono.test(dato)
 }
 
+function pedirPasswoord(){
+    var paswoord;
+    do{
+        paswoord= prompt("Escriba la contraseña")
+        if(paswoord==1234){
+            alert("Contraseña Correcta")
+        }else{
+            
+        alert("Contraseña Inconrrecta")
+        }
+
+    }while(paswoord != '1234')
+    
+
+    
+}

@@ -1,6 +1,7 @@
 let contenido = document.querySelector('#contenido')
 
 function traerUsuario() {
+  //fetch('https://randomuser.me/api')
   fetch('https://randomuser.me/api')
     .then(res => res.json())
     .then(res => {
