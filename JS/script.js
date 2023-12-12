@@ -133,12 +133,7 @@ function pedirPasswoord(){
         if(paswoord==1234){
             alert("Contraseña Correcta")
         }else{
-            
         alert("Contraseña Inconrrecta")
         }
-
     }while(paswoord != '1234')
-    
-
-    
 }
